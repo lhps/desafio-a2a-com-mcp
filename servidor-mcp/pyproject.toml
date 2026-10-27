@@ -1,0 +1,18 @@
+[project]
+name = "central-de-salas-servidor-mcp"
+version = "1.0.0"
+description = "Servidor MCP (Streamable HTTP) das salas da Hill Valley Tech"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp==2.3.0",
+    "mcp-types==2.3.0",
+    "pydantic==2.14.1",
+    "uvicorn==0.54.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["servidor"]
